@@ -1,0 +1,20 @@
+리눅스 명령어
+- ls
+- ls -a
+- touch 파일명
+- cd 파일명
+- cd ..
+- cat 파일명
+
+깃 명령어 : 앞에 꼭 git 붙이기
+- init
+- status
+- add 파일명
+- add .
+- config --global user.email "개인이메일주소"
+- config --global user.name "ID"
+- config --list
+- commit -m "커밋 메시지"
+- log
+- checkout 해시코드 7자 또는 전체
+- checkout -
