@@ -1,6 +1,14 @@
 리눅스 명령어
 - echo <"출력할문자열"> [>> 파일명] : 콘솔 출력. 파일명을 뒤에 쓰면 그 파일에 문자열을 이어 쓴다.
 - rm <파일명> : 파일 삭제
+- history
 
 깃 명령어 : 앞에 꼭 git 붙이기
 - branch -M main : 현재 branch의 이름을 main으로 변경한다.
+- remote add origin https://github.com/아이디/원격리포지토리이름.git
+- push -u origin main
+- push
+- remote -v
+- remote remove origin
+- clone https://github.com/아이디/원격리포지토리이름.git
+- clone https://github.com/아이디/원격리포지토리이름.git .
