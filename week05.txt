@@ -1,0 +1,16 @@
+Go 명령어
+go mod init 모듈이름
+go run 파일이름.go
+go build 파일이름.go
+
+
+리눅스 명령어
+cp 원본파일 복사본파일
+
+
+깃 명령어
+git reset
+
+
+기타 명령어
+.gitignore 파일 생성 (*.exe)
