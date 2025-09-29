@@ -27,4 +27,15 @@ func main() {
 	fmt.Println(name, reflect.TypeOf(name))
 	fmt.Println(id, reflect.TypeOf(id))
 	fmt.Println(gpa,reflect.TypeOf(gpa))
+
+	//Zero values
+	var f64 float64
+	var i16 int16
+	var t bool
+	var i int
+	
+	fmt.Println(f64)
+	fmt.Println(i16)
+	fmt.Println(t)
+	fmt.Println(i)
 }
