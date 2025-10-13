@@ -1,10 +1,11 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"strings"
+	"log"
+	"os"
 	// "reflect"
-	"time"
 )
 
 func main() {
@@ -15,13 +16,19 @@ func main() {
 	// fmt.Println("형변환", reflect.TypeOf(int(length)))
 	// fmt.Println("원본", reflect.TypeOf(length))
 
-	var now time.Time = time.Now()
-	// var year int = now.Year()
-	var month time.Month = now.Month()
-	var day int = now.Day()
-	fmt.Println(month, day)
-	univ := "Go$ Inha$"
-	changer := strings.NewReplacer("$", "!")
-	changed := changer.Replace(univ)
-	fmt.Println(changed)
+	// var now time.Time = time.Now()
+	// // var year int = now.Year()
+	// var month time.Month = now.Month()
+	// var day int = now.Day()
+	// fmt.Println(month, day)
+	// univ := "Go$ Inha$"
+	// changer := strings.NewReplacer("$", "!")
+	// changed := changer.Replace(univ)
+	// fmt.Println(changed)
+
+	r := bufio.NewReader(os.Stdin)
+	i, err := r.ReadString('\n')
+	// fmt.Println(err)
+	log.Fatal(err) //report the error, exit the program
+	fmt.Println(i)
 }
