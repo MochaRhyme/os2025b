@@ -1,13 +1,8 @@
 package main
 
 import (
-	"bufio"
 	"fmt"
-	"log"
-	"os"
-	"strconv"
-	"strings"
-	// "reflect"
+	"math/rand"
 )
 
 func main() {
@@ -43,24 +38,27 @@ func main() {
 	// fmt.Println(int,b)
 	// fmt.Println()
 
-	fmt.Print("Enter a score: ")
-	reader := bufio.NewReader(os.Stdin)
-	input, err := reader.ReadString('\n')
-	if err != nil {
-		log.Fatal(err)
-	}
+	// fmt.Print("Enter a score: ")
+	// reader := bufio.NewReader(os.Stdin)
+	// input, err := reader.ReadString('\n')
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
-	input = strings.TrimSpace(input)            // 문자열 주위 띄어쓰기 탭키 등등 제거
-	grade, err := strconv.ParseFloat(input, 64) // 정리된 문자열을 실수타입으로 변환
-	if err != nil {
-		log.Fatal(err)
-	}
+	// input = strings.TrimSpace(input)            // 문자열 주위 띄어쓰기 탭키 등등 제거
+	// grade, err := strconv.ParseFloat(input, 64) // 정리된 문자열을 실수타입으로 변환
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
 
-	var status string
-	if grade >= 60 {
-		status = "passing"
-	} else {
-		status = "failing"
-	}
-	fmt.Println("A grade of", grade, "is", status)
+	// var status string
+	// if grade >= 60 {
+	// 	status = "passing"
+	// } else {
+	// 	status = "failing"
+	// }
+	// fmt.Println("A grade of", grade, "is", status)
+	
+	dice := rand.Intn(6) + 1
+	fmt.Println(dice)
 }
