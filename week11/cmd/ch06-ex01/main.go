@@ -13,8 +13,13 @@ func main() {
 	// subjects[2] = "Python"
 
 	//v3
-	subjects := []string{"Go", "", "Python"} // slice literal
+	subjects := [4]string{"Go", "Javascript", "Python", "Linux"} // slice literal
+	subjectSlice:=subjects[1:3] // slicing
 	for _, subject := range subjects {
 		fmt.Println(subject)
+	}
+	fmt.Println("================")
+	for i:=0;i<len(subjectSlice);i++{
+		fmt.Println(subjectSlice[i])
 	}
 }
